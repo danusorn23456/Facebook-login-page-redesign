@@ -1,0 +1,22 @@
+.main-content {
+    background-color: rgb(240, 242, 245);
+
+    &__layout {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        width: var(--main-width);
+        margin: 0 auto;
+    }
+
+    &__side {
+        padding: 1rem 0;
+
+        &--left {
+            grid-template-columns: 1/2;
+        }
+
+        &--right {
+            grid-template-columns: 2/3;
+        }
+    }
+}

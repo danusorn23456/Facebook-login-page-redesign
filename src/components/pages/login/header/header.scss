@@ -1,0 +1,92 @@
+.header__login{
+    height: 82px;
+    min-width: 980px;
+    background: #3c5998;
+    background: linear-gradient(0deg, rgb(39,105,224) 0%, rgb(23,169,251) 100%);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.header{
+    &__side {
+        padding: 1px;
+        margin: 0 auto;
+        width: 980px;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        &--left{
+            padding-top: 3px;
+        }
+        &--right{
+            padding-top: 3px;
+            margin-left: auto;
+        }
+    }
+    
+    &--logo {
+        margin-top: 20px;
+        background: no-repeat url('../../../figure/facebookLogo.png');
+        width: 170px;
+        height: 34px;
+        background-position: 0 -196px;
+    }
+    
+}
+
+.login{
+    font-weight: bold;
+    
+    &__input {
+        transition: all 234ms ease-in-out;
+        height: 14px;
+        width: 142px;
+        border:1px solid white;
+        padding: 3px;
+        background-color: #E8F0FE;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4),-1px -1px 2px rgba(255, 255, 255, 0.4);
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    &__label {
+        padding: 6px 0;
+        font-size: 12px;
+        color: white;
+
+        &[class*=--forgotten-account] {
+            color: #9cb4d8;
+        }
+    }
+
+    &__link{
+        &>a{
+            color: white;
+            font-size: 12px;
+            text-decoration: none;
+            font-weight: blod;
+        }
+    }
+
+    &__button {
+        transition: all 234ms ease-in-out;
+        background: inherit;
+        border: 1px solid #0d48c9;
+        color:white;
+        border-radius: 2px;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 18px;
+        padding: 2px 6px;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4),-1px -1px 2px rgba(255, 255, 255, 0.4);
+        &:hover{
+            background: rgb(16, 112, 255);
+            transform: scale(1.2);
+        }
+    }
+
+}
